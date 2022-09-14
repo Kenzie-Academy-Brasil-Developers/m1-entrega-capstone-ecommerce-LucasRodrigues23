@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Loja dos Ricky's</title>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="container">
+            <div class="menu-flex">
+                <div class="logo">
+                    <img src="./img/Rick_and_Morty.svg" alt="Logo" title="logo">
+                </div>
+                <div class="navigations">
+                    <nav class="nav-menu">
+                        <ul>
+                            <li>
+                                <button id="NavTodos" class="navButtons">Todos</button>
+                            </li>
+                            <li>
+                                <button id="NavAcessorios" class="navButtons">Acessórios</button>
+                            </li>
+                            <li>
+                                <button id="NavCalcados" class="navButtons">Calçados</button>
+                            </li>
+                            <li>
+                                <button id="NavCamisetas" class="navButtons">Camisetas</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="vitrine-carrinho">
+            <main class="vitrine">
+                <div class="card-list">
+                    <ul cless="ul-card" id="ul-card">
+                    </ul>
+                </div>
+            </main>
+            <aside class="side-bar">
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="   Digite aqui sua pesquisa">
+                        <button>Pesquisar</button>
+                    </form>
+                </div>
+                <div class="carrinho" id="carrinho">
+                    <div class="box-carrinho-title">
+                        <span class="carrinho-title">Carrinho de Compras</span>
+                    </div>
+                    <div class="itens-carrinho">
+                        <ul id="ul-carrinho"></ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container"></div>
+    </footer>
+
+    <script src="./js/database.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
